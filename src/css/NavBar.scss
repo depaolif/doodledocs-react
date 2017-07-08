@@ -1,0 +1,24 @@
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1em 0em 1em 5%;
+  border-bottom: #000 2px solid;
+  background-color: #fff;
+  height: 3em;
+  line-height: 3em;
+}
+
+.nav-links {
+  padding-left:1.5em;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 36px;
+  float: right;
+  color: white;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+  margin-right: 10%;
+}

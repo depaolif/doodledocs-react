@@ -1,0 +1,31 @@
+#toolbar {
+	.tools {
+		list-style: none;
+		padding:0;
+		margin-left: 5%;
+
+		li {
+			display: inline;
+			padding: 0 7px;
+
+		}
+
+		li.coupled {
+			margin-right: -1em;
+		}
+
+		li.selected {
+			border-bottom: 2px solid black;
+		}
+
+		select, input {
+			vertical-align: top;
+			margin-top: 2.5px;
+			margin-left: 1px;
+		}
+
+		input {
+			height: 25px;
+		}
+	}
+}

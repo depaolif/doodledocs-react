@@ -1,0 +1,40 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#app-canvas {
+    cursor: url('../../public/brush-mini.png') 0 30, auto;
+    border: solid #aaa 1.5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
+    outline: none;
+}
+
+
+.save-box {
+  margin-top: 2em;
+  margin-left: 5%;
+  input {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: .5em;
+    text-decoration: none;
+    outline: none;
+  }
+  label{
+    vertical-align: bottom;
+    font-size: 1.4em;
+    margin-right: 5px
+  }
+}
+
+#auto{
+  margin-top: 1em;
+  vertical-align:top;
+  label{
+    font-size: 1em;
+    color: #555;
+  }
+}
