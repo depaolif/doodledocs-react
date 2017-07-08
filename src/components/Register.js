@@ -50,7 +50,7 @@ class Register extends Component {
 		event.preventDefault()
 		axios({
 			method: 'POST',
-			url: 'http://localhost:3001/v1/accounts',
+			url: 'https://aqueous-taiga-34525.herokuapp.com/v1/accounts',
 			data: {account: {username: this.state.username, password: this.state.password}}
 		})
 		.then(resp => {
@@ -61,7 +61,7 @@ class Register extends Component {
 		.then((token) => {
 			axios({
 				method: 'GET',
-				url: `http://localhost:3001/v1/me`,
+				url: `https://aqueous-taiga-34525.herokuapp.com/v1/me`,
 				headers: {bearer: token}
 			})
 			.then(resp => {

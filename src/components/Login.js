@@ -29,7 +29,7 @@ class Login extends Component {
 		event.preventDefault()
 		axios({
 			method: 'POST',
-			url: 'http://localhost:3001/v1/sessions',
+			url: 'https://aqueous-taiga-34525.herokuapp.com/v1/sessions',
 			data: {username: this.state.username, password: this.state.password}
 		})
 		.then(resp => {
@@ -40,7 +40,7 @@ class Login extends Component {
 		.then((token) => {
 			axios({
 				method: 'GET',
-				url: 'http://localhost:3001/v1/me',
+				url: 'https://aqueous-taiga-34525.herokuapp.com/v1/me',
 				headers: {bearer: token}
 			})
 			.then(resp => {

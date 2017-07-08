@@ -53,7 +53,7 @@ class Doodle extends Component {
 
 		this.autoSave = setInterval(() => {
 			if (this.props.images.autoSave && this.props.slider.value === this.state.history.length)
-				this.save('PATCH', `http://localhost:3001/v1/accounts/${this.props.account.id}/images/${this.props.images.current.id}`, this.props.images.current.title)
+				this.save('PATCH', `https://aqueous-taiga-34525.herokuapp.com/v1/accounts/${this.props.account.id}/images/${this.props.images.current.id}`, this.props.images.current.title)
 		}, 3000)
 
 			// event listeners for drawing events
@@ -103,7 +103,7 @@ class Doodle extends Component {
 
 	restoreImage() {
 		if (this.props.match.path !== '/') {
-			let url = `http://localhost:3001/v1/images/${this.props.match.params.imageId}`
+			let url = `https://aqueous-taiga-34525.herokuapp.com/v1/images/${this.props.match.params.imageId}`
 			axios({
 				method: 'GET',
 				url: url
@@ -122,7 +122,7 @@ class Doodle extends Component {
 
 	handleSave(event) {
 		event.preventDefault()
-		let url = `http://localhost:3001/v1/accounts/${this.props.account.id}/images`
+		let url = `https://aqueous-taiga-34525.herokuapp.com/v1/accounts/${this.props.account.id}/images`
 		let title
 		let method = 'POST'
 		if (event.target[0] && event.target[0].name === "title")
@@ -194,7 +194,7 @@ class Doodle extends Component {
 				<div id="auto">
 					<label > AutoSave</label>
 					<input type="checkbox" name="autosave" onClick={this.handleAutoSave} />
-				</div>	
+				</div>
 			</div>
 		}
 		return (

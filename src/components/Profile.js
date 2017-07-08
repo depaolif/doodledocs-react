@@ -15,7 +15,7 @@ class Profile extends Component {
 		event.preventDefault()
 		axios({
 			method: "DELETE",
-			url: `http://localhost:3001/v1/accounts/${this.props.account.id}/images/${id}`,
+			url: `https://aqueous-taiga-34525.herokuapp.com/v1/accounts/${this.props.account.id}/images/${id}`,
 			headers: {'bearer': this.props.account.token}
 		})
 		.then(resp => {

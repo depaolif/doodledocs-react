@@ -9,7 +9,7 @@ class ImageList extends Component {
 		const headers = localStorage.getItem('token') ? {"bearer": localStorage.getItem('token')} : null
 		axios({
 			method: 'GET',
-			url: 'http://localhost:3001/v1/images',
+			url: 'https://aqueous-taiga-34525.herokuapp.com/v1/images',
 			headers: headers
 		})
 		.then(resp => {

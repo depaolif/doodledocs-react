@@ -21,7 +21,7 @@ export const getInfo = (token) => {
 	return (dispatch) => {
 		axios({
 			method: 'GET',
-		   	url: 'http://localhost:3001/v1/me',
+		   	url: 'https://aqueous-taiga-34525.herokuapp.com/v1/me',
 			headers: {bearer: token}
 		})
 		.then(resp => {
